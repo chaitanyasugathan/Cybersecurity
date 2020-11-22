@@ -1,5 +1,5 @@
 # Cybersecurity
-Note: This Githun repository contains the project work files created by me as part of CyberSecurity learning
+Note: This Github repository contains the project work files created by me as part of CyberSecurity learning
 
 ## Automated ELK Stack Deployment
 
