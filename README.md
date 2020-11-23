@@ -31,6 +31,7 @@ Load balancing ensures that the application will be highly available, in additio
 
 - In this scenario, the Load balancer distributes the incoming HTTP traffic between the webservers (nodes or backend pool members), thus ensuring that the individual webservers and the network is not overwhelmed by huge volume of incoming HTTP traffic. This not only ensures that the web application, hosted on the webservers, provides a smooth running experience to the user, but it also helps prevent Denial-of-Service (DoS) or Distributed-Denial-of-service (DDoS) attacks.
 
+\
 A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an organization point to connect to other servers or untrusted environments. It is an intermediary host or an SSH gateway to a remote network, through which a connection can be made to another host. 
 
 - In this scenario, the jumpbox serves as the entry point while connecting to the Azure Virtual Machines (VMs) from the local workstation on on-premise network. This helps to keep open only one port instead of several ports to connect to different VMs configured on this network, thus limiting the attack surface and preventing the VMs from being exposed to the public.
@@ -38,13 +39,13 @@ A jump box is a secure computer that all admins first connect to before launchin
 - Additionally, the jumpbox has been linked to a Network Security Group, thus further limiting the access to the jumpbox to specific IPs. In the scenario shown in the network diagram, the access to jumpbox is restricted only to the local workstation IP.
 
 
-
+\
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the traffic pattern and system statistics.
 - Filebeat monitors the log files and collects log events, and forwards them either to Elasticsearch or Logstash for indexing
 - Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on your systems
 
+\
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
