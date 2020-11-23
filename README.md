@@ -90,11 +90,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 \
 The playbook implements the following tasks:
-1. Installs docker.io - It references the IP address listed under [elk] in ansible's hosts file to install docker on the target VM.
-2. Installs python3 - the Docker module uses python
-3. Installs docker module
-4. Increases virtual memory - A standard container does not have enough virtual memory to run an ELK container. For 2 DVWA machines, the suggested amount is 262144.
-5. Downloads and launches web container - Downloads and launches the ELK container, and lists the ports needed to access said container/application. The ports used in this case are - 5601, 9200 and 5044
+1. **Installs docker.io** - It references the IP address listed under [elk] in ansible's hosts file to install docker on the target VM.
+2. **Installs python3** - the Docker module uses python
+3. **Installs docker module**
+4. **Increases virtual memory** - A standard container does not have enough virtual memory to run an ELK container. For 2 DVWA machines, the suggested amount is 262144.
+5. **Downloads and launches ELK web container** - Downloads and launches the ELK container, and lists the ports needed to access said container/application. The ports used in this case are - 5601, 9200 and 5044
 
 <br />
 
