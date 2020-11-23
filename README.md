@@ -14,6 +14,8 @@ The Ansible playbook files have been tested and was used to generate a live ELK 
   - [Playbook: Filebeat Installation](Playbooks/filebeat-playbook.yml)
   - [Playbook: Metricbeat Installation](Playbooks/metricbeat-playbook.yml)
 
+<br />
+
 This document contains the following details:
 - [Description of the Topology](#description-of-the-topology)
 - [Access Policies](#access-policies)
@@ -34,15 +36,15 @@ Load balancing ensures that the application will be highly available, in additio
 \
 A **Jumpbox** is a secure computer that all admins first connect to before launching any administrative task or use as an organization point to connect to other servers or untrusted environments. It is an intermediary host or an SSH gateway to a remote network, through which a connection can be made to another host. 
 
-- In this scenario, the jumpbox serves as the entry point while connecting to the Azure Virtual Machines (VMs) from the local workstation on on-premise network. This helps to keep open only one port instead of several ports to connect to different VMs configured on this network, thus limiting the attack surface and preventing the VMs from being exposed to the public.
+- In this scenario, the jumpbox serves as the entry point while connecting to the *Azure Virtual Machines (VMs)* from the local workstation on on-premise network. This helps to keep open only one port instead of several ports to connect to different VMs configured on this network, thus limiting the attack surface and preventing the VMs from being exposed to the public.
 
-- Additionally, the jumpbox has been linked to a Network Security Group, thus further limiting the access to the jumpbox to specific IPs. In the scenario shown in the network diagram, the access to jumpbox is restricted only to the local workstation IP.
+- Additionally, the jumpbox has been linked to a *Network Security Group*, thus further limiting the access to the jumpbox to specific IPs. In the scenario shown in the network diagram, the access to jumpbox is restricted only to the local workstation IP.
 
 
 \
 Integrating an **ELK server** allows users to easily monitor the vulnerable VMs for changes to the traffic pattern and system statistics.
-- Filebeat monitors the log files and collects log events, and forwards them either to Elasticsearch or Logstash for indexing
-- Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on your systems
+- ***Filebeat*** monitors the log files and collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+- ***Metricbeat*** records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on your systems
 
 \
 **The configuration details of each machine may be found below:**
@@ -62,13 +64,13 @@ Integrating an **ELK server** allows users to easily monitor the vulnerable VMs 
 
 The webservers on the internal network are not exposed to the public Internet. Only the jumpbox machine, ELK server and load balancer can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses: <My Laptop Public IP>
 - The jumpbox VM can be accesed via port 22 and SSH keys using the jumpbox server's IP 40.83.169.23.
-- The ELK server's Kibana application can be accessed via port 5601 through its own public IP address 104.43.133.239
+- The ELK server's ***Kibana application*** can be accessed via port 5601 through its own public IP address 104.43.133.239
 - ELK server can be accessed from the jumpbox VM via port 22 and SSH keys using the ELK servers private IP address 10.1.0.4  
 
 \
 The webservers within the network can only be accessed by the public IP address of our load balancer.
-- The webservers's DVWA application is accessed via port 80 of the load balancer's public IP address 23.100.42.201
-- The webservers  can be accessed from the jumpbox VM via port 22 and SSH keys using the webservers' private IP address : 10.0.0.5 to SSH into Web-1 server and 10.0.0.6 to SSH into Web-2 server.
+- The webservers's ***DVWA application*** is accessed via port 80 of the load balancer's public IP address ***23.100.42.201***
+- The webservers  can be accessed from the jumpbox VM via port 22 and SSH keys using the webservers' private IP address : ***10.0.0.5 to SSH into Web-1 server*** and ***10.0.0.6 to SSH into Web-2 server***.
 
 \
 **A summary of the access policies in place can be found in the table below.**
