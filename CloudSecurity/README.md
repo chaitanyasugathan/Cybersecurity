@@ -1,5 +1,5 @@
-# CyberSecurity
-Note: This Github repository contains the projectwork documentation created by me as part of CyberSecurity learning
+# Cloud Security
+Note: This Github repository contains the projectwork documentation created by me as part of Cloud Security learning
 
 ## Automated ELK Stack Deployment
 
