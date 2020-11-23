@@ -15,7 +15,7 @@ The Ansible playbook files have been tested and was used to generate a live ELK 
   - [Playbook: Metricbeat Installation](Playbooks/metricbeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- [Description of the Topology](###Description of the Topology)
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -27,8 +27,17 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly available, in addition to restricting huge traffic volume to the network. 
+
+A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website
+
+- In this scenario, the Load balancer distributes the incoming HTTP traffic between the webservers (nodes or backend pool members), thus ensuring that the individual webservers and the network is not overwhelmed by huge volume of incoming HTTP traffic. This not only ensures that the web application, hosted on the webservers, provides a smooth running experience to the user, but it also helps prevent Denial-of-Service (DoS) or Distributed-Denial-of-service (DDoS) attacks.
+
+A jumpbox has been configured as our entry point while connecting to the Azure Virtual Machines (VMs) from the local workstation on on-premise network. This helps to open only one port instead of several ports to connect to different VMs configured on this network. Thus, limiting the attack surface and preventing the VMs from being exposed to the public.
+
+- Additionally, the Jumpbox has been linked to a Network Security Group, thus further limiting the access to the jumpbox to specific IPs; in the scenario shown in the network diagram, the access to jumpbox is restricted only to the local workstation IP.
+
+
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
