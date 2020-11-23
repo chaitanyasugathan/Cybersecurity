@@ -53,9 +53,9 @@ The configuration details of each machine may be found below.
 | Web-1        | DVWA     | 10.0.0.5   | Linux            |
 | Web-2        | DVWA     | 10.0.0.6   | Linux            |
 | Load Balancer| Balances traffic between webservers     | 23.100.42.201   | Linux            |
-| ELK-VM1      | ELK Server | 10.1.0.4 | Linux            |
+| ELK-VM1      | ELK Server | 10.1.0.4 | Linux            |\
 
-\
+
 ### Access Policies
 
 The webservers on the internal network are not exposed to the public Internet. Only the jumpbox machine, ELK server and load balancer can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses: <My Laptop Public IP>
@@ -76,7 +76,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-1    | No                  | 10.0.0.5             |
 | Web-2    | No                  | 10.0.0.6             |
 | Load Balancer (DVWA application)   | Yes                  | 23.100.42.201         |
-| ELK Server (Kibana application) | Yes            | 104.43.133.239 |
+| ELK Server (Kibana application) | Yes            | 104.43.133.239 |\
 
 ### Elk Configuration
 
