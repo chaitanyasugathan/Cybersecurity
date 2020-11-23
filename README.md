@@ -27,12 +27,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting huge traffic volume to the network. A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website
+Load balancing ensures that the application will be highly available, in addition to restricting huge traffic volume to the network. A **Load balancer** intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website
 
-- In this scenario, the Load balancer distributes the incoming HTTP traffic between the webservers (nodes or backend pool members), thus ensuring that the individual webservers and the network is not overwhelmed by huge volume of incoming HTTP traffic. This not only ensures that the web application, hosted on the webservers, provides a smooth running experience to the user, but it also helps prevent Denial-of-Service (DoS) or Distributed-Denial-of-service (DDoS) attacks.
+- In this scenario, the load balancer distributes the incoming HTTP traffic between the webservers (nodes or backend pool members), thus ensuring that the individual webservers and the network is not overwhelmed by huge volume of incoming HTTP traffic. This not only ensures that the web application, hosted on the webservers, provides a smooth running experience to the user, but it also helps prevent Denial-of-Service (DoS) or Distributed-Denial-of-service (DDoS) attacks.
 
 \
-A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an organization point to connect to other servers or untrusted environments. It is an intermediary host or an SSH gateway to a remote network, through which a connection can be made to another host. 
+A **Jumpbox** is a secure computer that all admins first connect to before launching any administrative task or use as an organization point to connect to other servers or untrusted environments. It is an intermediary host or an SSH gateway to a remote network, through which a connection can be made to another host. 
 
 - In this scenario, the jumpbox serves as the entry point while connecting to the Azure Virtual Machines (VMs) from the local workstation on on-premise network. This helps to keep open only one port instead of several ports to connect to different VMs configured on this network, thus limiting the attack surface and preventing the VMs from being exposed to the public.
 
@@ -40,7 +40,7 @@ A jump box is a secure computer that all admins first connect to before launchin
 
 
 \
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the traffic pattern and system statistics.
+Integrating an **ELK server** allows users to easily monitor the vulnerable VMs for changes to the traffic pattern and system statistics.
 - Filebeat monitors the log files and collects log events, and forwards them either to Elasticsearch or Logstash for indexing
 - Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on your systems
 
@@ -85,7 +85,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it limits the possibility of human error and allows us to deploy identical configurations on multiple servers.
+**Ansible** was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it limits the possibility of human error and allows us to deploy identical configurations on multiple servers.
 - Ansible is a simple automation language that is easy-to-learn, self-documenting and doesn’t require a grad-level computer science degree to read. The primary benefit of Ansible is that it allows IT administrators to automate their daily tasks. It can be used to update programs and configuration on hundreds of servers at once, but the process is the same whether you’re managing one computer or dozens. This frees the IT Administrators to focus on efforts that help deliver more value to the business by spending time on more important tasks. Also, Ansible is open source, which provides flexibility so users can find creative ways to adapt the product for their needs.
 
 \
@@ -122,7 +122,15 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
+##### Dashboard for data captured by Filebeat
+
+<br />
+
 ![Dashboard for data captured by Filebeat](Images/Filebeat_Dashboard.JPG)
+
+<br />
+
+##### Dashboard for data captured by Metricbeat
 
 <br />
 
