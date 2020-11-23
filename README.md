@@ -1,5 +1,5 @@
 # Cybersecurity
-Note: This Github repository contains the project work files created by me as part of CyberSecurity learning
+Note: This Github repository contains the projectwork documentation created by me as part of CyberSecurity learning
 
 ## Automated ELK Stack Deployment
 
@@ -7,9 +7,12 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Images/XCorp_RedTeam_VNet.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+The Ansible playbook files have been tested and was used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - [Playbook: DVWA Installation](Playbook/installdvwa-playbook.yml)
+  - [Playbook: ELK Installation](Playbook/installelk-playbook.yml)
+  - [Playbook: Filebeat Installation](Playbook/filebeat-playbook.yml)
+  - [Playbook: Metricbeat Installation](Playbook/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
