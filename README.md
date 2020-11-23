@@ -1,4 +1,4 @@
-# Cybersecurity
+# CyberSecurity
 Note: This Github repository contains the projectwork documentation created by me as part of CyberSecurity learning
 
 ## Automated ELK Stack Deployment
