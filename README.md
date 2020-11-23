@@ -16,7 +16,7 @@ The Ansible playbook files have been tested and was used to generate a live ELK 
 
 This document contains the following details:
 - [Description of the Topology](#description-of-the-topology)
-- Access Policies
+- [Access Policies](#access-policies)
 - ELK Configuration
   - Beats in Use
   - Machines Being Monitored
@@ -47,30 +47,36 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 \
 The configuration details of each machine may be found below.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web-1    | DVWA     | 10.0.0.5   | Linux            |
-| Web-2    | DVWA     | 10.0.0.6   | Linux            |
+| Name         | Function | IP Address | Operating System |
+|--------------|----------|------------|------------------|
+| Jump Box     | Gateway  | 10.0.0.4   | Linux            |
+| Web-1        | DVWA     | 10.0.0.5   | Linux            |
+| Web-2        | DVWA     | 10.0.0.6   | Linux            |
+| Load Balancer| Balances traffic between webservers     | 23.100.42.201   | Linux            |
+| ELK-VM1      | ELK Server | 10.1.0.4 | Linux            |
 
-
+\
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The webservers on the internal network are not exposed to the public Internet. Only the jumpbox machine, ELK server and load balancer can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses: <My Laptop Public IP>
+- The jumpbox VM can be accesed via port 22 and SSH keys using the jumpbox server's IP 40.83.169.23.
+- The ELK server's Kibana application can be accessed via port 5601 through its own public IP address 104.43.133.239
+- ELK server can be accessed from the jumpbox VM via port 22 and SSH keys using the ELK servers private IP address 10.1.0.4  
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+The webservers within the network can only be accessed by the public IP address of our load balancer.
+- The webservers's DVWA application is accessed via port 80 of the load balancer's public IP address 23.100.42.201
+- The webservers  can be accessed from the jumpbox VM via port 22 and SSH keys using the webservers' private IP address : 10.0.0.5 to SSH into Web-1 server and 10.0.0.6 to SSH into Web-2 server.
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-
+\
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 40.83.169.23         |
+| Web-1    | No                  | 10.0.0.5             |
+| Web-2    | No                  | 10.0.0.6             |
+| Load Balancer (DVWA application)   | Yes                  | 23.100.42.201         |
+| ELK Server (Kibana application) | Yes            | 104.43.133.239 |
 
 ### Elk Configuration
 
