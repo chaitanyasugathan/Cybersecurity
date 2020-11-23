@@ -3,7 +3,7 @@ Note: This Github repository contains the projectwork documentation created by m
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+**The files in this repository were used to configure the network depicted below.**
 
 ![](Images/XCorp_RedTeam_VNet.png)
 
@@ -45,7 +45,7 @@ Integrating an **ELK server** allows users to easily monitor the vulnerable VMs 
 - Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on your systems
 
 \
-The configuration details of each machine may be found below.
+**The configuration details of each machine may be found below:**
 
 | Name         | Function | IP Address | Operating System |
 |--------------|----------|------------|------------------|
@@ -71,7 +71,7 @@ The webservers within the network can only be accessed by the public IP address 
 - The webservers  can be accessed from the jumpbox VM via port 22 and SSH keys using the webservers' private IP address : 10.0.0.5 to SSH into Web-1 server and 10.0.0.6 to SSH into Web-2 server.
 
 \
-A summary of the access policies in place can be found in the table below.
+**A summary of the access policies in place can be found in the table below.**
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
@@ -89,16 +89,16 @@ A summary of the access policies in place can be found in the table below.
 - Ansible is a simple automation language that is easy-to-learn, self-documenting and doesn’t require a grad-level computer science degree to read. The primary benefit of Ansible is that it allows IT administrators to automate their daily tasks. It can be used to update programs and configuration on hundreds of servers at once, but the process is the same whether you’re managing one computer or dozens. This frees the IT Administrators to focus on efforts that help deliver more value to the business by spending time on more important tasks. Also, Ansible is open source, which provides flexibility so users can find creative ways to adapt the product for their needs.
 
 \
-The playbook implements the following tasks:
-1. **Installs docker.io** - It references the IP address listed under [elk] in ansible's hosts file to install docker on the target VM.
-2. **Installs python3** - the Docker module uses python
-3. **Installs docker module**
-4. **Increases virtual memory** - A standard container does not have enough virtual memory to run an ELK container. For 2 DVWA machines, the suggested amount is 262144.
-5. **Downloads and launches ELK web container** - Downloads and launches the ELK container, and lists the ports needed to access said container/application. The ports used in this case are - 5601, 9200 and 5044
+**The playbook implements the following tasks:**
+1. *Installs docker.io* - It references the IP address listed under [elk] in ansible's hosts file to install docker on the target VM.
+2. *Installs python3* - the Docker module uses python
+3. *Installs docker module*
+4. *Increases virtual memory* - A standard container does not have enough virtual memory to run an ELK container. For 2 DVWA machines, the suggested amount is 262144.
+5. *Downloads and launches ELK web container* - Downloads and launches the ELK container, and lists the ports needed to access said container/application. The ports used in this case are - 5601, 9200 and 5044
 
 <br />
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+**The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.**
 
 
 ![](Images/ELK-docker-ps-output.JPG)
@@ -107,22 +107,22 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines and Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 : 10.0.0.5
-- Web-2 : 10.0.0.6
+- **Web-1 : 10.0.0.5**
+- **Web-2 : 10.0.0.6**
 
 \
 We have installed the following Beats on these machines:
-- Filebeat
-- Metricbeat
+- **Filebeat**
+- **Metricbeat**
 
 \
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects and sends syslogs and auditd logs to Kibana for easy monitoring
-- Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics
+- **Filebeat** collects and sends syslogs and auditd logs to Kibana for easy monitoring
+- **Metricbeat** records system-level CPU usage, memory, file system, disk IO, and network IO statistics
 
 <br />
 
-##### Dashboard for data captured by Filebeat
+#### Dashboard for data captured by Filebeat
 
 <br />
 
@@ -130,7 +130,7 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-##### Dashboard for data captured by Metricbeat
+#### Dashboard for data captured by Metricbeat
 
 <br />
 
