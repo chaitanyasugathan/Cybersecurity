@@ -15,7 +15,7 @@ The Ansible playbook files have been tested and was used to generate a live ELK 
   - [Playbook: Metricbeat Installation](Playbooks/metricbeat-playbook.yml)
 
 This document contains the following details:
-- [Description of the Topology](###Description of the Topology)
+- [Description of the Topology](#description-of-the-topology)
 - Access Policies
 - ELK Configuration
   - Beats in Use
