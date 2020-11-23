@@ -86,19 +86,22 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it limits the possibility of human error and allows us to deploy identical configurations on multiple servers.
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- Ansible is a simple automation language that is easy-to-learn, self-documenting and doesn’t require a grad-level computer science degree to read. The primary benefit of Ansible is that it allows IT administrators to automate their daily tasks. It can be used to update programs and configuration on hundreds of servers at once, but the process is the same whether you’re managing one computer or dozens. This frees the IT Administrators to focus on efforts that help deliver more value to the business by spending time on more important tasks. Also, Ansible is open source, which provides flexibility so users can find creative ways to adapt the product for their needs.
 
+\
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+1. Installs docker.io - It references the IP address listed under [elk] in ansible's hosts file to install docker on the target VM.
+2. Installs python3 - the Docker module uses python
+3. Installs docker module
+4. Increases virtual memory - A standard container does not have enough virtual memory to run an ELK container. For 2 DVWA machines, the suggested amount is 262144.
+5. Downloads and launches web container - Downloads and launches the ELK container, and lists the ports needed to access said container/application. The ports used in this case are - 5601, 9200 and 5044
+
+<br />
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-**Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
 
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![](Images/ELK-docker-ps-output.JPG)
 
 <br />
 
