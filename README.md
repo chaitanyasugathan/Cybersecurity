@@ -65,6 +65,7 @@ The webservers on the internal network are not exposed to the public Internet. O
 - The ELK server's Kibana application can be accessed via port 5601 through its own public IP address 104.43.133.239
 - ELK server can be accessed from the jumpbox VM via port 22 and SSH keys using the ELK servers private IP address 10.1.0.4  
 
+\
 The webservers within the network can only be accessed by the public IP address of our load balancer.
 - The webservers's DVWA application is accessed via port 80 of the load balancer's public IP address 23.100.42.201
 - The webservers  can be accessed from the jumpbox VM via port 22 and SSH keys using the webservers' private IP address : 10.0.0.5 to SSH into Web-1 server and 10.0.0.6 to SSH into Web-2 server.
@@ -84,7 +85,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it limits the possibility of human error and allows us to deploy identical configurations on multiple servers.
 - _TODO: What is the main advantage of automating configuration with Ansible?_
 
 The playbook implements the following tasks:
