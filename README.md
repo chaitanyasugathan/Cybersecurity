@@ -17,11 +17,11 @@ The Ansible playbook files have been tested and was used to generate a live ELK 
 This document contains the following details:
 - [Description of the Topology](#description-of-the-topology)
 - [Access Policies](#access-policies)
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build \
+- [ELK Configuration](#elk-configuration)
+- [Target Machines & Beats](#target-machines-and-beats)
+- [How to Use the Ansible Build](#using-the-playbook)
 
+<br />
 
 ### Description of the Topology
 
@@ -53,8 +53,10 @@ The configuration details of each machine may be found below.
 | Web-1        | DVWA     | 10.0.0.5   | Linux            |
 | Web-2        | DVWA     | 10.0.0.6   | Linux            |
 | Load Balancer| Balances traffic between webservers     | 23.100.42.201   | Linux            |
-| ELK-VM1      | ELK Server | 10.1.0.4 | Linux            |\
+| ELK-VM1      | ELK Server | 10.1.0.4 | Linux            |
 
+
+<br />
 
 ### Access Policies
 
@@ -76,7 +78,9 @@ A summary of the access policies in place can be found in the table below.
 | Web-1    | No                  | 10.0.0.5             |
 | Web-2    | No                  | 10.0.0.6             |
 | Load Balancer (DVWA application)   | Yes                  | 23.100.42.201         |
-| ELK Server (Kibana application) | Yes            | 104.43.133.239 |\
+| ELK Server (Kibana application) | Yes            | 104.43.133.239 |
+
+<br />
 
 ### Elk Configuration
 
@@ -95,7 +99,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
-### Target Machines & Beats
+<br />
+
+### Target Machines and Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
@@ -104,6 +110,8 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+<br />
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
