@@ -191,5 +191,5 @@ SSH into the control node and follow the steps below:
 
 #### Additional Installations
 
-  - [Instructions - Filebeat Installation](Beats_Installations/InstallFilebeat.md)
-  - [Instructions - Metricbeat Installation](Beats_Installations/InstallMetricbeat.md)
+  - [Instructions - Filebeat Installation](Beats_InstallGuides/InstallFilebeat.md)
+  - [Instructions - Metricbeat Installation](Beats_InstallGuides/InstallMetricbeat.md)
