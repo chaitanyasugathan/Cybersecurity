@@ -123,6 +123,8 @@ These Beats allow us to collect the following information from each machine:
 - **Metricbeat** records system-level CPU usage, memory, file system, disk IO, and network IO statistics
 
 
+<br />
+
 ### Using the Playbooks
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
