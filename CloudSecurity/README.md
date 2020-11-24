@@ -122,23 +122,6 @@ These Beats allow us to collect the following information from each machine:
 - **Filebeat** collects and sends syslogs and auditd logs to Kibana for easy monitoring
 - **Metricbeat** records system-level CPU usage, memory, file system, disk IO, and network IO statistics
 
-<br />
-
-#### Dashboard for data captured by Filebeat
-
-<br />
-
-![Dashboard for data captured by Filebeat](Screengrabs/Filebeat_Dashboard.JPG)
-
-<br />
-
-#### Dashboard for data captured by Metricbeat
-
-<br />
-
-![Dashboard for data captured by Metricbeat](Screengrabs/Metricbeat_Dashboard.JPG)
-
-<br />
 
 ### Using the Playbooks
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
