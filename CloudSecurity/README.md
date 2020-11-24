@@ -103,7 +103,7 @@ The webservers within the network can only be accessed by the public IP address 
 **The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.**
 
 
-![](Diagrams/ELK-docker-ps-output.JPG)
+![](Screengrabs/ELK-docker-ps-output.JPG)
 
 <br />
 
@@ -128,7 +128,7 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-![Dashboard for data captured by Filebeat](Diagrams/Filebeat_Dashboard.JPG)
+![Dashboard for data captured by Filebeat](Screengrabs/Filebeat_Dashboard.JPG)
 
 <br />
 
@@ -136,7 +136,7 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-![Dashboard for data captured by Metricbeat](Diagrams/Metricbeat_Dashboard.JPG)
+![Dashboard for data captured by Metricbeat](Screengrabs/Metricbeat_Dashboard.JPG)
 
 <br />
 
@@ -163,7 +163,7 @@ SSH into the control node and follow the steps below:
 
 <br />
 
-![](Diagrams/DVWA_WebPage.JPG)
+![](Screengrabs/DVWA_WebPage.JPG)
 
 <br />
 
@@ -185,13 +185,11 @@ SSH into the control node and follow the steps below:
 
 <br />
 
-![](Diagrams/Kibana_WebPage.JPG)
+![](Screengrabs/Kibana_WebPage.JPG)
 
 <br />
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+#### Additional Installations
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+  - [Instructions - Filebeat Installation](Beats_Installations/InstallFilebeat.md)
+  - [Instructions - Metricbeat Installation](Beats_Installations/InstallMetricbeat.md)
