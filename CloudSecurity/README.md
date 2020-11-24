@@ -140,12 +140,22 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-### Using the Playbook
+### Using the Playbooks
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
+#### Using Playbook to install the DVWA application:
+\
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the ***installdvwa-playbook.yml*** file to location ***/etc/ansible***.
+- Update the ***hosts*** file to include the IP addresses of ***Web-1*** and ***Web-2*** VMs. 
+  1. Use the following command to enter the *hosts* file in edit mode: 'nano hosts'
+  2. Uncomment the [webservers] header line.
+  3. Add the internal IP address under the [webservers] header. 
+  The code snippet will look as shown below:
+  `[webservers]
+  10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+  10.0.0.7 ansible_python_interpreter=/usr/bin/python3` 
+  
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
