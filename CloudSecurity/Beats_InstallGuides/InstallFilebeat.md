@@ -14,12 +14,12 @@
   1. Scroll to line #1106 and replace the IP address with the IP address of your ELK machine.
      `output.elasticsearch:`\
        `hosts: ["10.1.0.4:9200"]`\
-       `username: "elastic"`\
-       `password: "changeme"`
+       	`username: "elastic"`\
+       	`password: "changeme"`
      
   2. Scroll to line #1806 and replace the IP address with the IP address of your ELK machine.\
      `setup.kibana:`\
-       `host: "10.1.0.4:5601"`
+     `host: "10.1.0.4:5601"`
      
      After you have edited the file, your settings should resemble the below. Your IP address may be different, but all other settings should be the same,
 including ports.
@@ -39,6 +39,6 @@ including ports.
 
 <br />
 
-![Dashboard for data captured by Filebeat](Screengrabs/Filebeat_Dashboard.JPG)
+![Dashboard for data captured by Filebeat](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/CloudSecurity/Screengrabs/Filebeat_Dashboard.JPG)
 
 <br />
