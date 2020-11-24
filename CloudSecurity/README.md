@@ -144,7 +144,7 @@ SSH into the control node and follow the steps below:
    1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
    2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
      `remote_user = <user-name-for-web-VMs>`
-- Run the playbook with command `ansible-playbook installdvwa-playbook.yml` and navigate to url ***http://23.100.42.201:80/*** to check that the installation worked as expected. (Here 23.100.42.201 is the Load Balancer Public IP). You should be getting the below shown webpage.
+- Run the playbook with command `ansible-playbook installdvwa-playbook.yml` and navigate to url ***http://23.100.42.201:80/*** to check that the installation worked as expected. *(Here 23.100.42.201 is the Load Balancer Public IP)* You should be getting the below shown webpage.
 
 <br />
 
@@ -166,7 +166,7 @@ SSH into the control node and follow the steps below:
    1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
    2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
      `remote_user = <user-name-for-elk-VM>`
-- Run the playbook with command `ansible-playbook installelk-playbook.yml` and navigate to url ***http://104.43.133.239:5601/app/kibana*** to check that the installation worked as expected. (Here 104.43.133.239 is the ELK Server Public IP) You should be getting the below shown webpage.
+- Run the playbook with command `ansible-playbook installelk-playbook.yml` and navigate to url ***http://104.43.133.239:5601/app/kibana*** to check that the installation worked as expected. *(Here 104.43.133.239 is the ELK Server Public IP)* You should be getting the below shown webpage.
 
 <br />
 
