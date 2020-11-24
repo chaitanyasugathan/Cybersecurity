@@ -144,7 +144,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 #### Using Playbook to install the DVWA application
-\
+
 SSH into the control node and follow the steps below:
 - Copy the ***installdvwa-playbook.yml*** file to location ***/etc/ansible***.
 - Update the ***hosts*** file to include the IP addresses of ***Web-1*** and ***Web-2*** VMs. 
@@ -156,8 +156,8 @@ SSH into the control node and follow the steps below:
      `10.0.0.6 ansible_python_interpreter=/usr/bin/python3`\
      `10.0.0.7 ansible_python_interpreter=/usr/bin/python3`
  - Change the Ansible configuration file to use your administrator account for SSH connections.
-  1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
-  2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
+   1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
+   2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
      `remote_user = <user-name-for-web-VMs>`
 - Run the playbook with command `ansible-playbook installdvwa-playbook.yml` and navigate to url ***http://23.100.42.201:80/*** to check that the installation worked as expected. You should be getting the below shown webpage.
 
@@ -168,7 +168,7 @@ SSH into the control node and follow the steps below:
 <br />
 
 #### Using Playbook to install the ELK application
-\
+
 SSH into the control node and follow the steps below:
 - Copy the ***installelk-playbook.yml*** file to location ***/etc/ansible***.
 - Update the ***hosts*** file to include the IP address of ***ELK-VM1*** VM. 
@@ -178,8 +178,8 @@ SSH into the control node and follow the steps below:
      ` [elkservers]`
      `10.1.0.4 ansible_python_interpreter=/usr/bin/python3`
  - Change the Ansible configuration file to use your administrator account for SSH connections.
-  1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
-  2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
+   1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
+   2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
      `remote_user = <user-name-for-elk-VM>`
 - Run the playbook with command `ansible-playbook installelk-playbook.yml` and navigate to url ***http://104.43.133.239:5601/app/kibana*** to check that the installation worked as expected. You should be getting the below shown webpage.
 
