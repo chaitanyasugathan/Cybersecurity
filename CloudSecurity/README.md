@@ -148,15 +148,24 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the ***installdvwa-playbook.yml*** file to location ***/etc/ansible***.
 - Update the ***hosts*** file to include the IP addresses of ***Web-1*** and ***Web-2*** VMs. 
-  1. Use the following command to enter the *hosts* file in edit mode: 'nano hosts'
+  1. Use the following command to enter the *hosts* file in edit mode: `nano hosts`
   2. Uncomment the [webservers] header line.
   3. Add the internal IP address under the [webservers] header. 
-  The code snippet will look as shown below:
-  `[webservers]
-  10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-  10.0.0.7 ansible_python_interpreter=/usr/bin/python3` 
-  
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+     The code snippet will look as shown below:\
+     `[webservers]`\
+     `10.0.0.6 ansible_python_interpreter=/usr/bin/python3`\
+     `10.0.0.7 ansible_python_interpreter=/usr/bin/python3`
+ - Change the Ansible configuration file to use your administrator account for SSH connections.
+  1. Open the file with `nano /etc/ansible/ansible.cfg` and scroll down to the ***remote_user*** option. 
+  2. Uncomment the ***remote_user*** line and replace root with your admin username using this format: -\
+     `remote_user = <user-name-for-web-VMs>`
+- Run the playbook with command `ansible-playbook installdvwa-playbook.yml` and navigate to url ***http://23.100.42.201:80/*** to check that the installation worked as expected. You should be getting the below shown webpage.
+
+<br />
+
+![](Diagrams/DVWA_WebPage.JPG)
+
+<br />
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
