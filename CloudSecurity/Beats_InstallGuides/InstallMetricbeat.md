@@ -10,14 +10,13 @@
   `curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml`
   
 - Edit the configuration in this file to match the settings described in the installation instructions for your server.
-  1. Scroll down to the below entry and replace the IP address with the IP address of your ELK machine 
-     `setup.kibana:`
+  1. Scroll down to the below entry and replace the IP address with the IP address of your ELK machine \
+     `setup.kibana:`\
         `host: "10.1.0.4:5601"`
-  2. Next, scroll down to the below entry and replace the IP address with the IP address of your ELK machine 
-     `output.elasticsearch:`
-      # Array of hosts to connect to.
-         `hosts: ["10.1.0.4:9200"]`
-         `username: "elastic"`
+  2. Next, scroll down to the below entry and replace the IP address with the IP address of your ELK machine \
+     `output.elasticsearch:`\
+         `hosts: ["10.1.0.4:9200"]`\
+         `username: "elastic"`\
          `password: "changeme"`
          
 - Copy the ***metricbeat-playbook.yml*** to the location ***/etc/ansible***
@@ -36,6 +35,6 @@
 
 <br />
 
-![Dashboard for data captured by Metricbeat](Screengrabs/Metricbeat_Dashboard.JPG)
+![Dashboard for data captured by Metricbeat](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/CloudSecurity/Screengrabs/Metricbeat_Dashboard.JPG)
 
 <br />
