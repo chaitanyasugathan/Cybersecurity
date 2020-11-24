@@ -62,7 +62,7 @@ Integrating an **ELK server** allows users to easily monitor the vulnerable VMs 
 
 ### Access Policies
 
-The webservers on the internal network are not exposed to the public Internet. Only the jumpbox machine, ELK server and load balancer can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses: ***My Laptop Public IP***
+The webservers on the internal network are not exposed to the public Internet. Only the jumpbox machine, ELK server and load balancer can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses: ***My Laptop's Public IP***
 - The jumpbox VM can be accesed via port 22 and SSH keys using the jumpbox server's IP 40.83.169.23.
 - The ELK server's ***Kibana application*** can be accessed via port 5601 through its own public IP address 104.43.133.239
 - ELK server can be accessed from the jumpbox VM via port 22 and SSH keys using the ELK servers private IP address 10.1.0.4  
