@@ -5,14 +5,14 @@ Note: This Github repository contains the projectwork documentation created by m
 
 **The files in this repository were used to configure the network depicted below.**
 
-![](Images/XCorp_RedTeam_VNet.png)
+![](Diagrams/XCorp_RedTeam_VNet.png)
 
 The Ansible playbook files have been tested and was used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  - [Playbook: DVWA Installation](Playbooks/installdvwa-playbook.yml)
-  - [Playbook: ELK Installation](Playbooks/installelk-playbook.yml)
-  - [Playbook: Filebeat Installation](Playbooks/filebeat-playbook.yml)
-  - [Playbook: Metricbeat Installation](Playbooks/metricbeat-playbook.yml)
+  - [Playbook: DVWA Installation](Ansible_Playbooks/installdvwa-playbook.yml)
+  - [Playbook: ELK Installation](Ansible_Playbooks/installelk-playbook.yml)
+  - [Playbook: Filebeat Installation](Ansible_Playbooks/filebeat-playbook.yml)
+  - [Playbook: Metricbeat Installation](Ansible_Playbooks/metricbeat-playbook.yml)
 
 <br />
 
@@ -103,7 +103,7 @@ The webservers within the network can only be accessed by the public IP address 
 **The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.**
 
 
-![](Images/ELK-docker-ps-output.JPG)
+![](Diagrams/ELK-docker-ps-output.JPG)
 
 <br />
 
@@ -128,7 +128,7 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-![Dashboard for data captured by Filebeat](Images/Filebeat_Dashboard.JPG)
+![Dashboard for data captured by Filebeat](Diagrams/Filebeat_Dashboard.JPG)
 
 <br />
 
@@ -136,7 +136,7 @@ These Beats allow us to collect the following information from each machine:
 
 <br />
 
-![Dashboard for data captured by Metricbeat](Images/Metricbeat_Dashboard.JPG)
+![Dashboard for data captured by Metricbeat](Diagrams/Metricbeat_Dashboard.JPG)
 
 <br />
 
