@@ -1,7 +1,7 @@
 # Install Filebeat
 
 
-### Install Guide for Filebeat installation
+### Install Guide for Filebeat installation on DVWA container
 
 - Open a terminal and SSH into your jump box:
   1. Start the Ansible container.
