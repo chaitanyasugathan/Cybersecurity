@@ -18,7 +18,9 @@
          `hosts: ["10.1.0.4:9200"]`\
          `username: "elastic"`\
          `password: "changeme"`
-         
+     \
+     Note: You can even copy the config file from this location.
+     - [metricbeat-config.yml](Beats_Configs/metricbeat-config.yml)
 - Copy the ***metricbeat-playbook.yml*** to the location ***/etc/ansible***
 
 - Run the playbook from its location: `ansible-playbook metricbeat-playbook.yml`
