@@ -51,7 +51,8 @@ Integrating an **ELK server** allows users to easily monitor the vulnerable VMs 
 
 | Name         | Function | IP Address | Operating System |
 |--------------|----------|------------|------------------|
-| Jump Box     | Gateway  | 10.0.0.4   | Linux            |
+| Jump Box     | Gateway  | Public IP:40.83.169.23   | Linux            |
+| Jump Box     | Gateway  | Private IP: 10.0.0.4   | Linux            |
 | Web-1        | DVWA     | 10.0.0.5   | Linux            |
 | Web-2        | DVWA     | 10.0.0.6   | Linux            |
 | Load Balancer| Balances traffic between webservers     | 23.100.42.201   | Linux            |
@@ -77,11 +78,12 @@ The webservers within the network can only be accessed by the public IP address 
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 40.83.169.23         |
-| Web-1    | No                  | 10.0.0.5             |
-| Web-2    | No                  | 10.0.0.6             |
-| Load Balancer (DVWA application)   | Yes                  | 23.100.42.201         |
-| ELK Server (Kibana application) | Yes            | 104.43.133.239 |
+| Jump Box (SSH over port 22) | Yes                 | Laptop public IP     |
+| Web-1    | No                  | 10.0.0.4              |
+| Web-2    | No                  | 10.0.0.4             |
+| Load Balancer (DVWA application)   | Yes                  | Laptop public IP        |
+| ELK Server (Kibana application) | Yes            | Laptop public IP |
+| ELK Server (SSH over port 22) | No            | 40.83.169.23 (Jumpbox IP)|
 
 <br />
 
