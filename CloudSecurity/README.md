@@ -1,5 +1,5 @@
 # Cloud Security
-Note: This Github repository contains the projectwork documentation created by me as part of Cloud Security learning
+Note: This Github repository contains the projectwork documentation created as part of Cloud Security learning
 
 ## Automated ELK Stack Deployment
 
@@ -21,7 +21,7 @@ This document contains the following details:
 - [Access Policies](#access-policies)
 - [ELK Configuration](#elk-configuration)
 - [Target Machines & Beats](#target-machines-and-beats)
-- [How to Use the Ansible Build](#using-the-playbook)
+- [How to Use the Ansible Build](#using-the-playbooks)
 
 <br />
 
@@ -174,7 +174,7 @@ SSH into the control node and follow the steps below:
 
 <br />
 
-#### Additional Installations
+#### Beats Installations
 
   - [Instructions - Filebeat Installation](Beats_InstallGuides/InstallFilebeat.md)
   - [Instructions - Metricbeat Installation](Beats_InstallGuides/InstallMetricbeat.md)
