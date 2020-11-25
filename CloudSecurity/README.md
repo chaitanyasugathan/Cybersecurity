@@ -51,7 +51,7 @@ Integrating an **ELK server** allows users to easily monitor the vulnerable VMs 
 
 | Name         | Function | IP Address | Operating System |
 |--------------|----------|------------|------------------|
-| Jump Box     | Gateway  | Public IP:40.83.169.23   | Linux            |
+| Jump Box     | Gateway  | Public IP:40.83.169.23 | Linux            |
 | Jump Box     | Gateway  | Private IP: 10.0.0.4   | Linux            |
 | Web-1        | DVWA     | 10.0.0.5   | Linux            |
 | Web-2        | DVWA     | 10.0.0.6   | Linux            |
