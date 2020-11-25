@@ -23,6 +23,8 @@
      
      After you have edited the file, your settings should resemble the below. Your IP address may be different, but all other settings should be the same,
 including ports.
+     Note: You can even copy the config file from this location.
+     - [filebeat-config.yml](Beats_Configs/filebeat-config.yml)
 
 - Copy the ***filebeat-playbook.yml*** to the location ***/etc/ansible***
 
