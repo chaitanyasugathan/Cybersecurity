@@ -78,11 +78,11 @@ The webservers within the network can only be accessed by the public IP address 
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box (SSH over port 22) | Yes                 | Laptop public IP     |
+| Jump Box (SSH over port 22) | No                 | Laptop public IP     |
 | Web-1    | No                  | 10.0.0.4 (Jumpbox ansible container)             |
 | Web-2    | No                  | 10.0.0.4 (Jumpbox ansible container)            |
-| Load Balancer (DVWA application)   | Yes                  | Laptop public IP        |
-| ELK Server (Kibana application) | Yes            | Laptop public IP |
+| Load Balancer (DVWA application)   | No                  | Laptop public IP        |
+| ELK Server (Kibana application) | No            | Laptop public IP |
 | ELK Server (SSH over port 22) | No            | 10.0.0.4 (Jumpbox ansible container)|
 
 <br />
