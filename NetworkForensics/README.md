@@ -1,5 +1,5 @@
 # Final Project
--
+
 Project scenario : Assuming the role of Security Engineer supporting an organization's SOC infrastructure.
 -
 The tasks involved :
