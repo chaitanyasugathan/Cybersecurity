@@ -12,7 +12,7 @@ The tasks involved :
 
 **Analysis Reports**
 
-[Offensive Red team Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Red%20Team%20-%20Summary%20of%20Operations.pdf)
-[Defensive Blue team Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Blue%20Team%20-%20Summary%20of%20Operations.pdf)
-[Network Forensic Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Network%20Forensic%20Analysis%20Report.pdf)
-[Network Forensic Analysis Presentation](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Network%20Presentation.pdf)
+- [Offensive Red team Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Red%20Team%20-%20Summary%20of%20Operations.pdf)
+- [Defensive Blue team Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Blue%20Team%20-%20Summary%20of%20Operations.pdf)
+- [Network Forensic Analysis](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Network%20Forensic%20Analysis%20Report.pdf)
+- [Network Forensic Analysis Presentation](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/NetworkForensics/Network%20Presentation.pdf)
