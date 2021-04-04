@@ -1,6 +1,6 @@
 # Final Project
-
-Project scenrio : Assuming the role of Security Engineer supporting an organization's SOC infrastructure.
+-
+Project scenario : Assuming the role of Security Engineer supporting an organization's SOC infrastructure.
 -
 The tasks involved :
 - Defensive Security - Implement alerts and set thresholds in Kibana.
