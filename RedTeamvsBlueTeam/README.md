@@ -16,4 +16,4 @@ Project involved working on a Red Team vs. Blue Team scenario in which I played 
 
 
 
-[Capstone Engagement - Assessment, Analysis and Hardening of a Vulnerable System.(https://github.com/chaitanyasugathan/Cybersecurity/blob/master/RedTeamvsBlueTeam/Capstone%20Engagement%20-%20Red%20Team%20vs%20Blue%20Team.pdf)
+[Capstone Engagement - Assessment, Analysis and Hardening of a Vulnerable System](https://github.com/chaitanyasugathan/Cybersecurity/blob/master/RedTeamvsBlueTeam/Capstone%20Engagement%20-%20Red%20Team%20vs%20Blue%20Team.pdf)
