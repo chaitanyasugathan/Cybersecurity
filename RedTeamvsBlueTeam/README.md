@@ -13,6 +13,7 @@ Project involved working on a Red Team vs. Blue Team scenario in which I played 
 - System hardening and configuration
 - Reporting, documentation, and communication
 
+##
 
 **Capstone Engagement - Assessment, Analysis and Hardening of a Vulnerable System**
 
