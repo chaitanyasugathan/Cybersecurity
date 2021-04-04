@@ -10,6 +10,6 @@ Note: This Github repository contains the project work documentations created as
 
 - [Capstone Project - Red Team vs Blue Team](https://github.com/chaitanyasugathan/Cybersecurity/tree/master/RedTeamvsBlueTeam)
 
-- [Network Forensics (Final Project)] (https://github.com/chaitanyasugathan/Cybersecurity/tree/master/NetworkForensics)
+- [Network Forensics (Final Project)](https://github.com/chaitanyasugathan/Cybersecurity/tree/master/NetworkForensics)
 
 <br />
