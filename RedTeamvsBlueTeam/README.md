@@ -1,6 +1,8 @@
 # Red Team vs. Blue Team
 
-Project involved working on a Red Team vs. Blue Team scenario in which I played the role of both pentester and SOC analyst. The tasks involved :
+Project involved working on a Red Team vs. Blue Team scenario in which I played the role of both pentester and SOC analyst. 
+-
+The tasks involved :
 - As the Red Team member, attack a vulnerable VM within the environment and ultimately gaining root access to the machine.
 - As Blue Team member, use Kibana to review logs captured during the previous engagement and to extract hard data and visualizations for the report.
 - Finally, to interpret the log data to suggest mitigation measures for each exploit that was successfully performed.
